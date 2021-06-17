@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Services - Serenity Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+	  /* 바로가기 버튼*/
+		.readmorebtn{
+		font-family: "Raleway", sans-serif;
+		font-weight: 500;
+		font-size: 15px;
+		letter-spacing: 1px;
+		display: inline-block;
+		padding: 8px 28px;
+		border-radius: 25px;
+		transition: 0.5s;
+		margin-top: 10px;
+		border: 2px solid #fff;
+		color: #2accbd; }
+	  
+	  .readmorebtn:hover {color: #FF28A7} 
+
+	 /* 로그인폼  */
+.getstarted_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.getstarted_login_id {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.getstarted_login_id input {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 10px;
+  padding: 0px 20px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+.getstarted_login_pw {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.getstarted_login_pw input {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 10px;
+  padding: 0px 20px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+.getstarted_login_etc {
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+	  
+.getstarted_login_submit {
+  margin-top: 20px;
+  width: 80%;
+}
+.getstarted_login_submit input {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  outline: none;
+  border-radius: 40px;
+  background: linear-gradient(to left, rgb(210, 65, 111), rgb(210, 140, 170));
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+	  
+.getstarted_login_identify {
+  margin-top: 10px;
+  width: 50%;
+}
+.getstarted_login_identify input {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: none;
+  border-radius: 40px;
+  background: linear-gradient(to left, rgb(210, 65, 111), rgb(210, 140, 170));
+  color: white;
+  font-size: 1.0em;
+  letter-spacing: 2px;
+}
+	  
+	  
+	</style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span style="color:#FF28A7">S</span>eoyoung's <span style="color:#FF28A7">R</span>ecipe</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aboutMe.html">Me </a></li>
+              <li><a href="team.html">My Team</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Blog</span><i class="bi bi-chevron-down"></i></a>
+			<ul>
+				 <li><a href="recipeblog.html">전체보기</a></li>
+                  <li class="dropdown"><a href="#"><span>한식</span><i class="bi bi-chevron-down"></i></a>
+				 <ul>
+                  <li><a href="blog-single.html">★김치찌개(웹페이지작성)★</a></li>
+                  <li><a href="https://www.10000recipe.com/recipe/4777254">연포탕</a></li>
+                  <li><a href="https://www.10000recipe.com/recipe/6879050">파전</a></li>
+                  <li><a href="https://www.10000recipe.com/recipe/6636695">찜닭</a></li>
+                  <li><a href="https://www.10000recipe.com/recipe/6895042">냉면</a></li>
+                </ul>
+				</li>
+				<li class="dropdown"><a href="#"><span>양식</span><i class="bi bi-chevron-down"></i></a>				 <ul><li><a href="https://www.10000recipe.com/recipe/6842271">파스타</a></li>
+					<li><a href="https://www.10000recipe.com/recipe/6931196">샐러드</a></li></ul>
+					</li>
+                  <li class="dropdown"><a href="#"><span>중식</span><i class="bi bi-chevron-down"></i></a><ul><li><a href="https://www.10000recipe.com/recipe/6947119">만두</a></li>
+					<li><a href="https://www.10000recipe.com/recipe/6932679">꿔바로우</a></li></ul></li>
+                  <li class="dropdown"><a href="#"><span>일식</span><i class="bi bi-chevron-down"></i></a><ul><li><a href="https://www.10000recipe.com/recipe/6906498">돈까스</a></li>
+					</ul></li>
+                  <li class="dropdown"><a href="#"><span>디저트</span><i class="bi bi-chevron-down"></i></a><ul><li><a href="https://www.10000recipe.com/recipe/6841122">계란빵</a></li>
+					<li><a href="https://www.10000recipe.com/recipe/6878357">고구마스콘</a></li></ul></li>
+			</ul>
+				</li>
+          <li><a href="contact.html">Contact</a></li>
+
+          <li><a class="getstarted" href="login.html">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="breadcrumb-hero">
+        <div class="container">
+          <div class="breadcrumb-hero">
+            <br><h2>SeoYoung's Blog에 오신 것을 환영합니다.</h2><br>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>sign in/up</li>
+        </ol>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>로그인 / 회원가입 안내</h2>
+			<!-- style="list-style:none;" 불릿제거 -->
+          <ul style="list-style:none;"> 
+				<li>비회원으로 이용가능한 기능 : 레시피 조회</li>
+				<li>회원으로 이용가능한 기능 : 레시피 조회, 등록, 수정, 삭제 / 댓글 작성 및 수정 / 별점 남기기 </li>		
+			  </ul>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="card" style="background-image: url(assets/img/features-1.jpg);">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">로그인</a></h5>
+                <p class="card-text">가입된 회원 아이디와 비밀번호로 로그인 합니다.</p>
+				  <div class="read-more">
+					  <input type="button" class="readmorebtn" value="바로가기" onclick="getstartedBox_show();"/>
+				  </div>
+              </div>
+            </div>
+          </div>
+          
+	<div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="card" style="background-image: url(assets/img/features-2.jpg);">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">회원가입</a></h5>
+                <p class="card-text">회원 아이디와 비밀번호가 없는 경우
+회원가입을 하셔야 합니다.</p>
+                <div class="read-more"><input class="readmorebtn" type="button" value="바로가기" onclick="getstartedBox_show2();"/></div>
+              </div>
+            </div>
+          </div>
+			
+			<div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" >
+            <div id="getstartedBox" class="card" style="background-image: url(assets/img/features-3.jpg); display:none;">
+              <div class="card-body"  >
+                <div class="getstarted_login">
+            <h5 class="card-title">로그인 하기</h5>
+            <div class="getstarted_login_id">
+                <h4>E-mail</h4>
+                <input type="email" name="" id="id_" placeholder="Email">
+            </div>
+            <div class="getstarted_login_pw">
+                <h4>Password</h4>
+                <input type="password" name="" id="pass_" placeholder="Password">
+            </div>
+            <div class="getstarted_login_etc">
+                <div class="checkbox">
+                <input type="checkbox" name="" id=""> Remember Me?
+                </div>
+            </div>
+            <div class="getstarted_login_submit">
+                <input type="submit" value="submit" onclick="alert_submit_signin()">
+            </div>
+        </div>
+				  <!-- <h5 class="card-title"><a href="">아이디</a></h5>
+                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem.</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i>이동하기</a></div> -->
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="100">
+            <div id="getstartedBox2" class="card" style="background-image: url(assets/img/features-4.jpg); display:none;">
+              <div class="card-body">
+				   <div class="getstarted_login">
+            <h5 class="card-title">가입하기</h5>
+					    <p class="card-text">아래 가입 양식을 맞춰 정보를 입력해주세요</p>
+            <div class="getstarted_login_id">
+                <h4>E-mail</h4>
+                <input type="email" name="" id="" placeholder="Email">
+            </div>
+				<div class="getstarted_login_identify">
+					   <input type="submit" value="인증하기" 
+							  onclick="alert_authorize()"></div>
+            <div class="getstarted_login_pw">
+                <h4>Password</h4>
+                <input type="password" name="" id="" placeholder="Password">
+				<input type="password" name="" id="" placeholder="Password 확인">
+            </div>
+
+            <div class="getstarted_login_submit">
+                <input type="submit" value="submit" onclick="alert_submit_signup()">
+            </div>
+        </div>
+                
+               
+				  
+                <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutMe.html">About</a></li>
+              <li><a href="recipeblog.html">Recipe Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Sign up/Sign in</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Me</h4>
+            <p>
+              가천대학교 <br>
+              경기도 성남시 수정구<br>
+              republic of Korea<br>
+              <strong>Phone:</strong> +82 010 2345 1234<br>
+              <strong>Email:</strong> sxz2345@naver.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>References</h4>
+            
+			<p>만개의 레시피 <br> 식품안전나라 - 식품영양정보 API <br> 농식품 올바로 - 건강식단관리(메뉴젠)</p>	
+			  <form action="" method="post">
+              <input type="email" name="email"
+					 title="관리자에게 답변을 받기위한 이메일 주소를 전송합니다."
+					 placeholder="관리자에게 이메일 전송"
+					 ><input type="submit" value="Send">
+        	  </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Seoyoung Kim</span></strong>. 
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/serenity-bootstrap-corporate-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- JS	 -->
+	<script>
+		function getstartedBox_show(){
+			if(document.getElementById("getstartedBox").style.display =="none") {
+				document.getElementById("getstartedBox").style.display = "block";
+				document.getElementById("getstartedBox2").style.display ="none";
+			}	
+		}
+		
+		function getstartedBox_show2(){
+			if(document.getElementById("getstartedBox2").style.display =="none"){
+				document.getElementById("getstartedBox2").style.display = "block";
+				document.getElementById("getstartedBox").style.display ="none";	
+			}
+		}
+		
+		function alert_authorize() { 
+		alert('인증되었습니다');
+		}
+		
+		function alert_submit_signup() { 
+		alert('가입되었습니다');
+		}	
+		
+		function alert_submit_signin() { 
+			var ID = document.getElementById('id_').value;
+            var pass = document.getElementById('pass_').value;
+            if (ID === "1234" && pass === "1234") {
+                alert("로그인 성공!");
+            }
+            else {
+                alert("로그인 실패!");	
+			}
+		}
+		
+		
+	</script>
+	
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
