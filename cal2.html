@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>운동칼로리계산기</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- google tag manager head S -->
+<!-- Google Tag Manager -->
+<script type="text/javascript" async="" src="assetscal2/analytics.js"></script>
+<script src="assetscal2/osd.js"></script>
+<script type="text/javascript" async="" src="assetscal2/analytics.js"></script><script async="" src="assetscal2/gtm.js"></script>
+<!-- Bootstrap core CSS -->
+<link href="assetscal2/bootstrap.min.css" rel="stylesheet">
+<script src="assetscal2/jquery.min.js"></script>
+<script src="assetscal2/bootstrap.min.js"></script>
+<!-- data picker--->
+<!-- fontawesome-->
+<!-- <link rel="stylesheet" href="assetscal2/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+<link href="assetscal2/screen.css" rel="stylesheet" type="text/css">
+<script src="assetscal2/athcal.js"></script>
+<!-- ani number-->
+<script src="assetscal2/jquery.easing.1.3.js"></script>
+<script src="assetscal2/jquery.color.js"></script>
+<script src="assetscal2/jquery.animateNumber.min.js"></script>
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+   <body class="" data-google-affiliate-annotated="1" style="">
+  <!-- google tag manager body S -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNPVZ7B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->      
+	   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="http://kcal.soseyo.com/">칼로리계산기</a> -->
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="https://">음식칼로리계산기</a></li>
+            <li class="active"><a href="#">운동칼로리계산</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container" style="height: auto !important;">
+
+	  <div class="starter-template">
+        <h1>운동 칼로리 계산기</h1>
+        <p class="lead">운동을 선택후 몸무게와 운동시간을 입력하면 소비된 칼로리가 계산됩니다.</p>
+		<span style="font-size:11px;">※ 이 페이지에 사용된 이미지는 무료 이미지입니다.</span>
+      </div>
+		<div class="row resultpanel" style="height: auto !important;">
+			<div class="col-lg-12" style="height: auto !important; min-height: 0px !important;">
+			<div role="tabpanel" style="height: auto !important;">
+				  <!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="" s_kcal="80"><a href="#walking" onclick="javascript:athReset();" aria-controls="home" role="tab" data-toggle="tab">걷기</a></li>
+						<li role="presentation" s_kcal="141" class=""><a href="#staires" aria-controls="forignfood" role="tab" data-toggle="tab">계단</a></li>
+						<li role="presentation" s_kcal="224" class="active"><a href="#jumprope" aria-controls="wfood" role="tab" data-toggle="tab">줄넘기</a></li>
+						<li role="presentation" s_kcal="250"><a href="#bicycle" aria-controls="wfood" role="tab" data-toggle="tab">자전거</a></li>
+						<li role="presentation" s_kcal="196"><a href="#climbing" aria-controls="pfood" role="tab" data-toggle="tab">등산</a></li>
+						<li role="presentation" s_kcal="518"><a href="#swimming" aria-controls="bfood" role="tab" data-toggle="tab">수영</a></li>
+						<li role="presentation" s_kcal="25"><a href="#yoga" aria-controls="frfood" role="tab" data-toggle="tab">요가</a></li>
+						<li role="presentation" s_kcal="196"><a href="#running" aria-controls="wfood" role="tab" data-toggle="tab">달리기</a></li>
+						<li role="presentation" s_kcal="111"><a href="#cycle" aria-controls="wfood" role="tab" data-toggle="tab">사이클</a></li>
+						<li role="presentation" s_kcal="126"><a href="#aerobic" aria-controls="wfood" role="tab" data-toggle="tab">에어로빅</a></li>
+						<li role="presentation" s_kcal="200"><a href="#pingpong" aria-controls="wfood" role="tab" data-toggle="tab">탁구</a></li>
+						<li role="presentation" s_kcal="200"><a href="#basketball" aria-controls="wfood" role="tab" data-toggle="tab">농구</a></li>
+						<li role="presentation" s_kcal="186"><a href="#ski" aria-controls="wfood" role="tab" data-toggle="tab">스키</a></li>
+					</ul>
+				  <!-- Tab panes -->
+				
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane" id="walking">
+						<li style="float:left;">
+							<img src="assetscal2/walking.png" class="img-responsive" title="걷기" alt="걷기">걷기운동으로 소비된 열량은 총 <span class="kcal">0</span> Kcal</li>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="staires">
+						<li style="float:left;">	
+							<img src="assetscal2/stairs.png" class="img-responsive" title="계단오르기" alt="계단오르기">계단오르기로 소비된 열량은 총 <span class="kcal">0</span> Kcal</li>
+					</div>
+					<div role="tabpanel" class="tab-pane active" id="jumprope">
+						<li style="float:left;">	
+							<img src="assetscal2/jumprope.png" class="img-responsive" title="줄넘기" alt="줄넘기">줄넘기 운동으로 소비된 열량은 총 <span class="kcal">0</span> Kcal</li>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="bicycle">
+						<li style="float:left;">	
+							<img src="assetscal2/bicycle.png" class="img-responsive" title="자전거" alt="자전거">자전거 운동으로 소비된 열량은 총 <span class="kcal">0</span> Kcal</li>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="climbing">
+						<li style="float:left;">	
+							<img src="assetscal2/climbing.png" class="img-responsive" title="등산" alt="등산">등산으로 소비된 열량은 총 <span class="kcal">0</span> Kcal</li>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="swimming">
+						<li style="float:left;">	
+							<img src="assetscal2/swimming.png" class="img-responsive" title="수영" alt="수영">수영으로 소비된 열량은 총 <span class="kcal">0</span> Kcal</li>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="yoga">
+						<li style="float:left;">	
+							<img src="assetscal2/yoga.png" class="img-responsive" title="요가" alt="요가">요가로 소비된 열량은 총 <span class="kcal">0</span> Kcal</li>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="running">
+						<li style="float:left;">	
+							<img src="assetscal2/running.png" class="img-responsive" title="달리기" alt="달리기">달리기로 소비된 열량은 총 <span class="kcal">0</span> Kcal</li>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="cycle">
+						<li style="float:left;">
+							<img src="assetscal2/cycle.png" class="img-responsive" title="사이클" alt="사이클">사이클 운동으로 소비된 열량은 총 <span class="kcal">0</span> Kcal</li>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="aerobic">
+						<li style="float:left;">	
+							<img src="assetscal2/aerobic.png" class="img-responsive" title="에어로빅" alt="에어로빅">에어로빅 운동으로 소비된 열량은 총 <span class="kcal">0</span> Kcal</li>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="pingpong">
+						<li style="float:left;">	
+							<img src="assetscal2/pingpong.png" class="img-responsive" title="탁구" alt="탁구">탁구로 소비된 열량은 총 <span class="kcal">0</span> Kcal</li>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="basketball">
+						<li style="float:left;">	
+							<img src="assetscal2/basketball.png" class="img-responsive" title="농구" alt="농구">농구로 소비된 열량은 총 <span class="kcal">0</span> Kcal</li>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="ski">
+						<li style="float:left;">	
+							<img src="assetscal2/ski.png" class="img-responsive" title="스키" alt="스키">스키로 소비된 열량은 총 <span class="kcal">0</span> Kcal</li>
+					</div>
+				</div>
+			</div><!-- end row  tabpanel -->
+
+			<div class="row">
+				<div class="col-lg-1"><span>몸무게</span></div>
+				<div class="col-lg-2"><input type="text" class="form-control commadisplay" maxlength="3" id="kg" placeholder="kg"></div>
+				<div class="col-lg-2"><span>운동시간</span></div>
+				<div class="col-lg-2"><input type="text" class="form-control commadisplay" maxlength="3" id="minute" placeholder="분"></div>
+			</div><!-- end row-->
+			<div class="row resultpanel">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<span>운동으로 소비된 총 Kcal</span>
+						<br><span class="kcal">0</span> Kcal
+					</div>
+				</div> 
+			</div>
+		</div><!-- end resultpanell -->
+		<!-- 선택 kcal -->
+		<input type="hidden" name="setkcal" id="setkcal" value="224">
+		<div class="row">
+			<div class="col-lg-4">
+			<button class="btn btn-large btn-danger start btn-lg" onclick="JavaScript:athCal();">계산하기 </button>
+			</div>
+			<div class="col-lg-4">&nbsp;</div>
+		</div>
+    </div><!-- /.container -->
+
+	<!-- Site footer -->
+<footer class="footer">
+</footer>
+		
+<!--입력 유도 설명  modal S-->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> 기초운동별 칼로리 계산기</h4>
+      </div>
+      <div class="modal-body">
+        <p style="font-size:13px;">
+			<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 몸무게(Kg)와 오늘 하신 운동시간(분)을 입력해주세요..<br>
+	     </p></div>
+	  <div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">확인</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!--입력 유도 설명  modal S-->
+<br><br>
+	
+  
